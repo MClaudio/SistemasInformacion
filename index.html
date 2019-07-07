@@ -29,111 +29,105 @@
 
     <section>
         <form action="">
-            <div class="formGrup grupName">
-                <div class="imputGrup" id="nombreGrup">
+            <div class="form-row">
+                <div class="form-group col" id="nombreGrup">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                 </div>
-                <div class="imputGrup" id="apellidoGrup">
+                <div class="form-group col" id="apellidoGrup">
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
                 </div>
             </div>
 
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="cedula">Cedula</label>
-                    <input type="text" name="cedula" id="cedula">
+            <div class="form-group" id="cedulaGrup">
+                <label for="cedula">Cedula</label>
+                <input type="text" class="form-control" id="cedula" placeholder="Cedula">
+            </div>
+
+            <div class="form-group" id="fechaNacGrup">
+                <label for="fechaNac">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fechaNac">
+            </div>
+
+            <div class="form-group" id="correoGrup">
+                <label for="correo">Email</label>
+                <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+            </div>
+
+            <div class="form-group" id="nameUserGrup">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="form-group" id="telefonoGrup">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+            </div>
+
+            <div class="form-group" id="celularGrup">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control" id="celular" placeholder="Celular">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col" id="direccionGrup">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+                </div>
+                <div class="form-group col" id="dereccion1Grup">
+                    <label for="direccion2">Direccion 2</label>
+                    <input type="text" class="form-control" id="direccion2" placeholder="Direccion 2">
                 </div>
             </div>
 
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="correo">
-                </div>
-            </div>
-
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="username">Nombre de usuario</label>
-                    <input type="email" name="username" id="username">
-                </div>
-            </div>
-
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="telefono">Telefono</label>
-                    <input type="text" name="telefono" id="telefono">
-                </div>
-            </div>
-
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="telefono">Celular</label>
-                    <input type="text" name="celular" id="celular">
-                </div>
-            </div>
-
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="cedula">Direccion</label>
-                    <input type="text" name="direccion2" id="direccion2">
-                </div>
-            </div>
-
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="cedula">Direccion 2</label>
-                    <input type="text" name="direccion2" id="direccion2">
-                </div>
-            </div>
-
-            <div class="formGrup grupCity">
-                <div class="imputGrup">
+            <div class="form-row">
+                <div class="form-group col" id="ciudadGrup">
                     <label for="ciudad">Ciudad</label>
-                    <input type="text" name="ciudad" id="ciudad">
+                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
                 </div>
-                <div class="imputGrup">
-                    <label for="apellido">Provincia</label>
-                    <input type="text" name="provincia" id="provincia">
+                <div class="form-group col" id="provinciaGrup">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" class="form-control" id="provincia" placeholder="Provincia">
                 </div>
-                <div class="imputGrup">
-                    <label for="codPostal">Codigo postal</label>
-                    <input type="text" name="codPostal" id="codPostal">
-                </div>
-            </div>
-            <div class="formGrup">
-                <div class="imputGrup">
-                    <label for="cedula">Sexo</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">Hombre</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2">Mujer</label>
-                    </div>
+                <div class="form-group col" id="codPosGrup">
+                    <label for="codPost">Codigo Postal</label>
+                    <input type="text" class="form-control" id="codPost" placeholder="Codigo Postal">
                 </div>
             </div>
 
-            <div class="formGrup status">
-                <div class="imputGrup">
+            <div class="form-group" id="sexoGrup">
+                <label for="cedula">Sexo</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Hombre</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Mujer</label>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="formGrup col" id="estadoCivilGrup">
                     <label for="estadoCivil">State</label>
-                    <select id="estadoCivil" class="statusControl">
+                    <select id="estadoCivil" class="form-control">
                         <option selected>Soltero</option>
                         <option>Casado</option>
                         <option>Divorciado</option>
                         <option>Otro</option>
                     </select>
                 </div>
-                <div class="imputGrup">
+
+                <div class="form-group col" id="numeroHijosGrup">
                     <label for="hijosNum">Numero de hijos</label>
-                    <input type="number" name="hijosNum" id="hijosNum" min="0" value="0">
+                    <input type="number" class="form-control" id="hijosNum" min="0" value="0">
                 </div>
-                <div class="imputGrup">
+
+                <div class="form-group col" id="tipoSangGrup">
                     <label for="sangreTipo">Tipo de sangre</label>
-                    <input type="text" name="sangreTipo" id="sangreTipo">
+                    <input type="text" class="form-control" id="sangreTipo" placeholder="Tipo de sangre">
                 </div>
             </div>
 
@@ -161,6 +155,96 @@
             d.getElementById("apellidoGrup").style.display = "block";
         } else {
             d.getElementById("apellidoGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('cedulaGrup'))) {
+            d.getElementById("cedulaGrup").style.display = "block";
+        } else {
+            d.getElementById("cedulaGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('fechaNacGrup'))) {
+            d.getElementById("fechaNacGrup").style.display = "block";
+        } else {
+            d.getElementById("fechaNacGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('correoGrup'))) {
+            d.getElementById("correoGrup").style.display = "block";
+        } else {
+            d.getElementById("correoGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('nameUserGrup'))) {
+            d.getElementById("nameUserGrup").style.display = "block";
+        } else {
+            d.getElementById("nameUserGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('telefonoGrup'))) {
+            d.getElementById("telefonoGrup").style.display = "block";
+        } else {
+            d.getElementById("telefonoGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('celularGrup'))) {
+            d.getElementById("celularGrup").style.display = "block";
+        } else {
+            d.getElementById("celularGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('direccionGrup'))) {
+            d.getElementById("direccionGrup").style.display = "block";
+        } else {
+            d.getElementById("direccionGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('dereccion1Grup'))) {
+            d.getElementById("dereccion1Grup").style.display = "block";
+        } else {
+            d.getElementById("dereccion1Grup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('ciudadGrup'))) {
+            d.getElementById("ciudadGrup").style.display = "block";
+        } else {
+            d.getElementById("ciudadGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('provinciaGrup'))) {
+            d.getElementById("provinciaGrup").style.display = "block";
+        } else {
+            d.getElementById("provinciaGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('codPosGrup'))) {
+            d.getElementById("codPosGrup").style.display = "block";
+        } else {
+            d.getElementById("codPosGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('sexoGrup'))) {
+            d.getElementById("sexoGrup").style.display = "block";
+        } else {
+            d.getElementById("sexoGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('estadoCivilGrup'))) {
+            d.getElementById("estadoCivilGrup").style.display = "block";
+        } else {
+            d.getElementById("estadoCivilGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('numeroHijosGrup'))) {
+            d.getElementById("numeroHijosGrup").style.display = "block";
+        } else {
+            d.getElementById("numeroHijosGrup").style.display = "none";
+        }
+
+        if (JSON.parse(sessionStorage.getItem('tipoSangGrup'))) {
+            d.getElementById("tipoSangGrup").style.display = "block";
+        } else {
+            d.getElementById("tipoSangGrup").style.display = "none";
         }
 
 

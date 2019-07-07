@@ -27,32 +27,174 @@
         </div>
     </nav>
 
-    <ul>
-        <li>
-            <label for="">Nombre</label>
-            <label class="switch">
-                <input type="checkbox" id="checkNombre">
-                <span class="slider round"></span>
-            </label>
-        </li>
-        <li>
-            <label for="">Apellido</label>
-            <label class="switch">
-                <input type="checkbox" id="checkApellido">
-                <span class="slider round"></span>
-            </label>
-        </li>
-    </ul>
-    <button type="submit" class="btn btn-primary" onclick="cambiarStatus()">Guardar</button>
+    <div class="conf">
+        <ul>
+            <li>
+                <label for="checkNombre" class="label">Nombre</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkNombre">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkApellido" class="label">Apellido</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkApellido">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkCedula" class="label">Cedula</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkCedula">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkFechaNac" class="label">Fecha de nacimiento</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkFechaNac">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkCorreo" class="label">Correo</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkCorreo">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkUsername" class="label">Nombre de usuario</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkUsername">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkTelefono" class="label">Telefono</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkTelefono">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkCelular" class="label">Celular</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkCelular">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkDireccion" class="label">Direccion</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkDireccion">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkDireccion1" class="label">Direccion 1</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkDireccion1">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkCiudad" class="label">Ciudad</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkCiudad">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkProvinciad" class="label">Provincia</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkProvincia">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkCodPost" class="label">Codigo postal</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkCodPost">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkSexo" class="label">Sexo</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkSexo">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkEstadoCivil" class="label">Estado civil</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkEstadoCivil">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkNumHijos" class="label">Numero de hijos</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkNumHijos">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li>
+                <label for="checkTipoSan" class="label">Tipo de sangre</label>
+                <label class="switch">
+                    <input type="checkbox" id="checkTipoSan">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+
+
+        </ul>
+        <button type="submit" class="btn btn-primary" onclick="cambiarStatus()">Guardar</button>
+    </div>
+
+
+
 
     <script>
         d = document;
-        document.getElementById('checkNombre').checked = JSON.parse(sessionStorage.getItem('nombreGrup'));
-        document.getElementById('checkApellido').checked = JSON.parse(sessionStorage.getItem('apellidoGrup'));
+        d.getElementById('checkNombre').checked = JSON.parse(sessionStorage.getItem('nombreGrup'));
+        d.getElementById('checkApellido').checked = JSON.parse(sessionStorage.getItem('apellidoGrup'));
+        d.getElementById('checkCedula').checked = JSON.parse(sessionStorage.getItem('cedulaGrup'));
+        d.getElementById('checkFechaNac').checked = JSON.parse(sessionStorage.getItem('fechaNacGrup'));
+        d.getElementById('checkCorreo').checked = JSON.parse(sessionStorage.getItem('correoGrup'));
+        d.getElementById('checkUsername').checked = JSON.parse(sessionStorage.getItem('nameUserGrup'));
+        d.getElementById('checkTelefono').checked = JSON.parse(sessionStorage.getItem('telefonoGrup'));
+        d.getElementById('checkCelular').checked = JSON.parse(sessionStorage.getItem('celularGrup'));
+        d.getElementById('checkDireccion').checked = JSON.parse(sessionStorage.getItem('direccionGrup'));
+        d.getElementById('checkDireccion1').checked = JSON.parse(sessionStorage.getItem('dereccion1Grup'));
+        d.getElementById('checkCiudad').checked = JSON.parse(sessionStorage.getItem('ciudadGrup'));
+        d.getElementById('checkProvincia').checked = JSON.parse(sessionStorage.getItem('provinciaGrup'));
+        d.getElementById('checkCodPost').checked = JSON.parse(sessionStorage.getItem('codPosGrup'));
+        d.getElementById('checkSexo').checked = JSON.parse(sessionStorage.getItem('sexoGrup'));
+        d.getElementById('checkEstadoCivil').checked = JSON.parse(sessionStorage.getItem('estadoCivilGrup'));
+        d.getElementById('checkNumHijos').checked = JSON.parse(sessionStorage.getItem('numeroHijosGrup'));
+        d.getElementById('checkTipoSan').checked = JSON.parse(sessionStorage.getItem('tipoSangGrup'));
 
         function cambiarStatus() {
-            sessionStorage.setItem('nombreGrup', document.getElementById('checkNombre').checked);
-            sessionStorage.setItem('apellidoGrup', document.getElementById('checkApellido').checked);
+            sessionStorage.setItem('nombreGrup', d.getElementById('checkNombre').checked);
+            sessionStorage.setItem('apellidoGrup', d.getElementById('checkApellido').checked);
+            sessionStorage.setItem('cedulaGrup', d.getElementById('checkCedula').checked);
+            sessionStorage.setItem('fechaNacGrup', d.getElementById('checkFechaNac').checked);
+            sessionStorage.setItem('correoGrup', d.getElementById('checkCorreo').checked);
+            sessionStorage.setItem('nameUserGrup', d.getElementById('checkUsername').checked);
+            sessionStorage.setItem('telefonoGrup', d.getElementById('checkTelefono').checked);
+            sessionStorage.setItem('celularGrup', d.getElementById('checkCelular').checked);
+            sessionStorage.setItem('direccionGrup', d.getElementById('checkDireccion').checked);
+            sessionStorage.setItem('dereccion1Grup', d.getElementById('checkDireccion1').checked);
+            sessionStorage.setItem('ciudadGrup', d.getElementById('checkCiudad').checked);
+            sessionStorage.setItem('provinciaGrup', d.getElementById('checkProvincia').checked);
+            sessionStorage.setItem('codPosGrup', d.getElementById('checkCodPost').checked);
+            sessionStorage.setItem('sexoGrup', d.getElementById('checkSexo').checked);
+            sessionStorage.setItem('estadoCivilGrup', d.getElementById('checkEstadoCivil').checked);
+            sessionStorage.setItem('numeroHijosGrup', d.getElementById('checkNumHijos').checked);
+            sessionStorage.setItem('tipoSangGrup', d.getElementById('checkTipoSan').checked);
         }
     </script>
 </body>

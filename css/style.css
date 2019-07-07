@@ -5,6 +5,7 @@ body section{
 }
 body form{
     margin-top: 15px;
+    width: 45%;
 }
 body .formGrup{
     width: 100%;
@@ -14,7 +15,27 @@ body .formGrup input{
     border: solid 1px #e5e5e5;
 }
 
+body .formGrup.grupName{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+}
 
+
+.conf{
+    margin: 15px;
+    width: 30%;
+}
+
+.conf ul li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.conf ul li .label{
+    margin-right: 10px;
+    text-align: right;
+}
 
  /* The switch - the box around the slider */
  .switch {
