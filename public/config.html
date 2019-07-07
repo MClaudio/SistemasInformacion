@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../global/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">APP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Registro<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="config.html">Configuarar formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul>
+        <li>
+            <label for="">Nombre</label>
+            <label class="switch">
+                <input type="checkbox" id="checkNombre">
+                <span class="slider round"></span>
+            </label>
+        </li>
+        <li>
+            <label for="">Apellido</label>
+            <label class="switch">
+                <input type="checkbox" id="checkApellido">
+                <span class="slider round"></span>
+            </label>
+        </li>
+    </ul>
+    <button type="submit" class="btn btn-primary" onclick="cambiarStatus()">Guardar</button>
+
+    <script>
+        d = document;
+        document.getElementById('checkNombre').checked = JSON.parse(sessionStorage.getItem('nombreGrup'));
+        document.getElementById('checkApellido').checked = JSON.parse(sessionStorage.getItem('apellidoGrup'));
+
+        function cambiarStatus() {
+            sessionStorage.setItem('nombreGrup', document.getElementById('checkNombre').checked);
+            sessionStorage.setItem('apellidoGrup', document.getElementById('checkApellido').checked);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="global/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/values.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">APP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Registro<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/config.html">Configuarar formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <form action="">
+            <div class="formGrup grupName">
+                <div class="imputGrup" id="nombreGrup">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="imputGrup" id="apellidoGrup">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="cedula">Cedula</label>
+                    <input type="text" name="cedula" id="cedula">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="email" name="username" id="username">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="telefono">Celular</label>
+                    <input type="text" name="celular" id="celular">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="cedula">Direccion</label>
+                    <input type="text" name="direccion2" id="direccion2">
+                </div>
+            </div>
+
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="cedula">Direccion 2</label>
+                    <input type="text" name="direccion2" id="direccion2">
+                </div>
+            </div>
+
+            <div class="formGrup grupCity">
+                <div class="imputGrup">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" id="ciudad">
+                </div>
+                <div class="imputGrup">
+                    <label for="apellido">Provincia</label>
+                    <input type="text" name="provincia" id="provincia">
+                </div>
+                <div class="imputGrup">
+                    <label for="codPostal">Codigo postal</label>
+                    <input type="text" name="codPostal" id="codPostal">
+                </div>
+            </div>
+            <div class="formGrup">
+                <div class="imputGrup">
+                    <label for="cedula">Sexo</label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Hombre</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Mujer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formGrup status">
+                <div class="imputGrup">
+                    <label for="estadoCivil">State</label>
+                    <select id="estadoCivil" class="statusControl">
+                        <option selected>Soltero</option>
+                        <option>Casado</option>
+                        <option>Divorciado</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="imputGrup">
+                    <label for="hijosNum">Numero de hijos</label>
+                    <input type="number" name="hijosNum" id="hijosNum" min="0" value="0">
+                </div>
+                <div class="imputGrup">
+                    <label for="sangreTipo">Tipo de sangre</label>
+                    <input type="text" name="sangreTipo" id="sangreTipo">
+                </div>
+            </div>
+
+            <div class="btns">
+                <button type="button" class="btn btn-warning" onclick="location.href='public/config.html'">Configurar
+                    formulario</button>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+
+
+        </form>
+    </section>
+    <script>
+        var d = document;
+        //console.log("la vriable es " + JSON.parse(sessionStorage.getItem('nombreGrup')))
+        if (JSON.parse(sessionStorage.getItem('nombreGrup'))) {
+            d.getElementById("nombreGrup").style.display = "block";
+            //console.log("es true")
+        } else {
+            d.getElementById("nombreGrup").style.display = "none";
+            //console.log("hola es falso")
+        }
+
+        if (JSON.parse(sessionStorage.getItem('apellidoGrup'))) {
+            d.getElementById("apellidoGrup").style.display = "block";
+        } else {
+            d.getElementById("apellidoGrup").style.display = "none";
+        }
+
+
+    </script>
+</body>
+
+</html>
