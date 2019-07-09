@@ -24,9 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="public/config.html">Configuarar formulario</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="public/tabla.php">Tabla</a>
-                </li>
+               
             </ul>
         </div>
     </nav>
