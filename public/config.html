@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Registro<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.php">Registro<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="config.html">Configuarar formulario</a>
@@ -179,6 +179,9 @@
 
         function cambiarStatus() {
             sessionStorage.setItem('nombreGrup', d.getElementById('checkNombre').checked);
+            
+
+
             sessionStorage.setItem('apellidoGrup', d.getElementById('checkApellido').checked);
             sessionStorage.setItem('cedulaGrup', d.getElementById('checkCedula').checked);
             sessionStorage.setItem('fechaNacGrup', d.getElementById('checkFechaNac').checked);
@@ -195,6 +198,7 @@
             sessionStorage.setItem('estadoCivilGrup', d.getElementById('checkEstadoCivil').checked);
             sessionStorage.setItem('numeroHijosGrup', d.getElementById('checkNumHijos').checked);
             sessionStorage.setItem('tipoSangGrup', d.getElementById('checkTipoSan').checked);
+            location.href='../index.php'
         }
     </script>
 </body>

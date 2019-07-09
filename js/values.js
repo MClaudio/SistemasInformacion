@@ -17,4 +17,6 @@ if (!sessionStorage.getItem('logOn')) {
     sessionStorage.setItem('numeroHijosGrup', 'true')
     sessionStorage.setItem('tipoSangGrup', 'true')
     sessionStorage.setItem('logOn', 'true')
+
+    
 }
